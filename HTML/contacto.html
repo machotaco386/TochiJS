@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tochi | Contacto</title>
+    <link rel="icon" href="../IMAGENES/index/TOCHI_LOGO.PNG" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/carrusel.css">
+    <link rel="stylesheet" href="../CSS/contenido.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/responsividad.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+       <!-- AJAX -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Botón Hamburguesa -->
+<button class="boton-menu" onclick="menu()">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <!-- Menú Lateral -->
+  <nav id="menu-lateral" class="menu-lateral">
+    <div class="encabezado-menu">
+      <h2><i class="fas fa-chili-pepper"></i> Tochi</h2>
+    </div>
+    <div class="elementos-menu">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+        <a href="productos.html"><i class="fas fa-pepper-hot"></i> Productos</a>
+        <a href="contacto.html"><i class="fas fa-envelope-open-text"></i> Contacto</a>
+      </div>
+  </nav>
+  
+  <!-- overlay -->
+  <div id="overlay" class="overlay" onclick="menu()"></div>
+
+    <header id="encabezado-principal">
+        <div class="logo">
+            <img src="../IMAGENES/index/TOCHI_LOGO.PNG" alt="Logo de Tochi">
+            <h1>Tochi</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-contacto">
+        <div class="formulario-contacto">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Jesus Minero">
+                <span class="error" id="error-nombre"></span>
+
+    
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required placeholder="10 dígitos">
+                <span class="error" id="error-telefono"></span>
+
+    
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                <span class="error" id="error-correo"></span>
+
+    
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="" disabled selected hidden>Seleccione una opción</option>
+                    <option value="informacion">Solicitar información</option>
+                    <option value="pedido">Realizar un pedido</option>
+                    <option value="sugerencia">Enviar una sugerencia</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <span class="error" id="error-asunto"></span>
+
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                <span class="error" id="error-mensaje"></span>
+
+    
+                <div class="checkbox-politica">
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">Acepto la política de privacidad</label>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+        <div class="tarjeta-contacto">
+            <h2>Información de contacto</h2>
+            <ul>
+                <li><i class="fas fa-phone"></i> Tel: +52 123 456 7890</li>
+                <li><i class="fas fa-envelope"></i> Email: contacto@tochi.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Tochi #123, Teocaltiche, JAL</li>
+                <li><i class="fas fa-clock"></i> Horario: Lunes a Viernes de 9:00 a.m. a 6:00 p.m.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> Tel: +52 123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> Email: contacto@tochi.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Tochi #123, Teocaltiche, JAL</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><i class="fas fa-home"></i> <a href="index.html">Inicio</a></li>
+                    <li><i class="fas fa-users"></i> <a href="nosotros.html">Nosotros</a></li>
+                    <li><i class="fas fa-box-open"></i> <a href="productos.html">Productos</a></li>
+                    <li><i class="far fa-address-book"></i> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Tochi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../JAVASCRIPT/header.js"></script>
+    <script src="../JAVASCRIPT/menu.js"></script>
+    <script src="../JAVASCRIPT/formulario.js"></script>
+</body>
+</html>

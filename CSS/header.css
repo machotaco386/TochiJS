@@ -1,0 +1,111 @@
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(252, 118, 5); /* Naranja inicial */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    height: 15vh;
+    z-index: 9996;
+    transition: all 0.5s ease;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 10vh;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+}
+
+.logo h1 {
+    font-family: 'Segoe UI', sans-serif !important;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: white;
+    transition: all 0.5s ease;
+    padding-left: 2.5rem;
+}
+
+nav .menu {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    position: relative;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s;
+    padding-bottom: 5px; 
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    top: 1.7em;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover {
+    color: black;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.menu li a.activo {
+    color: black;
+}
+
+.menu li a.activo::after {
+    width: 100%;
+}
+
+.header-scroll {
+    background-color: #d72638; 
+    height: 10vh;
+}
+
+
+.header-scroll .logo img {
+    height: 7vh;
+}
+
+.header-scroll .logo h1 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.header-scroll .menu li a {
+    color: white;
+    font-size: 1rem;
+}
+
+.header-scroll .menu li a:hover {
+    color: black;
+}
+
+.header-scroll .menu li a.activo {
+    color: black;
+}

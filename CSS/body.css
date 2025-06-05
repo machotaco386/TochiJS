@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5ec;
+    color: #1a1a1a;
+    max-width: 1920px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Clase global reutilizable para contenido estructurado */
+.seccion-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Títulos dentro de secciones */
+.seccion-contenido h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: #b52d1b;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Párrafos */
+.seccion-contenido p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-wrap: balance;
+}
+
+.seccion-contenido b {
+    color: #b52d1b;
+    font-weight: bolder;
+}

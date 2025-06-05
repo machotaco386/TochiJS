@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tochi | productos</title>
+    <link rel="icon" href="../IMAGENES/index/TOCHI_LOGO.PNG" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/carrusel.css">
+    <link rel="stylesheet" href="../CSS/imagenes.css">
+    <link rel="stylesheet" href="../CSS/contenido.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/mapa.css">
+    <link rel="stylesheet" href="../CSS/responsividad.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/productos.css">
+       <!-- AJAX -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Botón Hamburguesa -->
+<button class="boton-menu" onclick="menu()">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <!-- Menú Lateral -->
+  <nav id="menu-lateral" class="menu-lateral">
+    <div class="encabezado-menu">
+      <h2><i class="fas fa-chili-pepper"></i> Tochi</h2>
+    </div>
+    <div class="elementos-menu">
+        <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+        <a href="productos.html"><i class="fas fa-pepper-hot"></i> Productos</a>
+        <a href="contacto.html"><i class="fas fa-envelope-open-text"></i> Contacto</a>
+      </div>
+  </nav>
+  
+  <!-- overlay -->
+  <div id="overlay" class="overlay" onclick="menu()"></div>
+
+    <header id="encabezado-principal">
+        <div class="logo">
+            <img src="../IMAGENES/index/TOCHI_LOGO.PNG" alt="Logo de Tochi">
+            <h1>Tochi</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html" class="activo">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="seccion-productos">
+        <h2 class="titulo-productos">Nuestros Productos</h2>
+        <div class="contenedor-productos">
+            <div class="tarjeta-producto">
+                <img src="../IMAGENES/productos/tochi.png" alt="Producto 1">
+                <h3>Tochi Clásica</h3>
+                <p>Crujientes y llenas de sabor, nuestras Tostadas Tochi Original están hechas con ingredientes seleccionados y un toque perfecto de chile de árbol que realza su sabor sin ser abrumador. Son el acompañamiento ideal para todo tipo de comidas o para disfrutarlas solas como un snack delicioso y lleno de tradición. Su textura ligera y su sabor equilibrado las convierten en una opción versátil para cualquier ocasión.</p>
+                <a href="../HTML/Productos/tochiclasica.html" class="boton-saber-mas">Saber más</a>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="../IMAGENES/Productos/tochilimon.png" alt="Producto 2">
+                <h3>Tochi Limón y Chile</h3>
+                <p>Una explosión de sabor en cada bocado. Estas tostadas combinan el picor característico del chile de árbol con un toque cítrico de limón natural que aporta frescura y equilibrio. Son perfectas para quienes buscan una experiencia más atrevida pero refrescante, ya sea como botana, acompañando guacamole, ceviche o incluso como base para canapés únicos y sabrosos.</p>
+                <a href="../HTML/Productos/tochilimon.html" class="boton-saber-mas">Saber más</a>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="../IMAGENES/productos/tochipicante.png" alt="Producto 3">
+                <h3>Tochi Picante Extra</h3>
+                <p>Hechas para los verdaderos amantes del picante, estas tostadas elevan el nivel de intensidad con una mezcla más potente de chile de árbol. Cada mordida despierta el paladar y te invita a seguir disfrutando de su sabor robusto y audaz. Son la elección ideal para quienes buscan emociones fuertes en cada bocado y no temen al fuego del buen chile mexicano.</p>
+                <a href="../HTML/Productos/tochiextrapicante.html" class="boton-saber-mas">Saber más</a>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="../IMAGENES/productos/tochisaludable.png" alt="Producto 4">
+                <h3>Tochi Saludable</h3>
+                <p>Pensadas para quienes cuidan su alimentación sin renunciar al sabor, nuestras tostadas saludables están elaboradas con maíz integral y una dosis moderada de chile de árbol. Son ricas en fibra y libres de conservadores, lo que las convierte en una excelente opción para una dieta equilibrada. Disfrútalas como snack nutritivo o como parte de un platillo ligero y sabroso.</p>
+                <a href="../HTML/Productos/tochisaludable.html" class="boton-saber-mas">Saber más</a>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="../IMAGENES/productos/tochilight.png" alt="Producto 5">
+                <h3>Tochi Light</h3>
+                <p>Versión reducida en grasa, manteniendo el sabor que te encanta.</p>
+                <a href="../HTML/Productos/tochilight.html" class="boton-saber-mas">Saber más</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> Tel: +52 123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> Email: contacto@tochi.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Tochi #123, Teocaltiche, JAL</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><i class="fas fa-home"></i> <a href="../index.html">Inicio</a></li>
+                    <li><i class="fas fa-users"></i> <a href="nosotros.html">Nosotros</a></li>
+                    <li><i class="fas fa-box-open"></i> <a href="productos.html">Productos</a></li>
+                    <li><i class="far fa-address-book"></i> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Tochi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../JAVASCRIPT/header.js"></script>
+    <script src="../JAVASCRIPT/menu.js"></script>
+</body>
+</html>

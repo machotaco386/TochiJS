@@ -1,0 +1,16 @@
+header, main, section, footer{
+    width: 100%;
+}
+
+main {
+    padding-top: 100px;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}

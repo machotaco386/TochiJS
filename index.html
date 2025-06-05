@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tochi: tostadas crujientes, picositas y llenas de sabor. Conócenos.">
+    <title>Tochi | Inicio</title>
+    <link rel="icon" href="../IMAGENES/index/TOCHI_LOGO.PNG" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/body.css">
+    <link rel="stylesheet" href="./CSS/carrusel.css">
+    <link rel="stylesheet" href="./CSS/imagenes.css">
+    <link rel="stylesheet" href="./CSS/contenido.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/mapa.css">
+    <link rel="stylesheet" href="./CSS/responsividad.css">
+    <link rel="stylesheet" href="./CSS/menu.css">
+
+       <!-- ICONOS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+<!-- Botón Hamburguesa -->
+<button class="boton-menu" onclick="menu()">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <!-- Menú Lateral -->
+  <nav id="menu-lateral" class="menu-lateral">
+    <div class="encabezado-menu">
+      <h2><i class="fas fa-chili-pepper"></i> Tochi</h2>
+    </div>
+    <div class="elementos-menu">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="./HTML/nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+        <a href="./HTML/productos.html"><i class="fas fa-pepper-hot"></i> Productos</a>
+        <a href="./HTML/contacto.html"><i class="fas fa-envelope-open-text"></i> Contacto</a>
+      </div>
+  </nav>
+  
+  <!-- overlay -->
+  <div id="overlay" class="overlay" onclick="menu()"></div>
+
+    <header id="encabezado-principal">
+        <div class="logo">
+            <img src="./IMAGENES/index/TOCHI_LOGO.PNG" alt="Logo de Tochi">
+            <h1>Tochi</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="./HTML/nosotros.html">Nosotros</a></li>
+                <li><a href="./HTML/productos.html">Productos</a></li>
+                <li><a href="./HTML/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="carousel">
+            <div class="slide active">
+                <img src="./IMAGENES/index/banner1.jpg" alt="Imagen 1">
+                <div class="texto-slide">
+                    <p>Bienvenido a Tochi</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./IMAGENES/index/banner2.jpg" alt="Imagen 2">
+                <div class="texto-slide">
+                    <p>Porque en cada mordida, te llevas un pedacito de nuestra tierra</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./IMAGENES/index/banner3.jpg" alt="Imagen 3">
+                <div class="texto-slide">
+                    <p>Tochi: Porque lo simple, hecho con amor, sabe mejor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="seccion-contenido">
+            <h2>Auténticas por naturaleza</h2>
+            <p>En <b>Tochi</b> creamos más que una simple tostada: creamos una experiencia única para quienes buscan un sabor auténtico, natural y diferente. Nuestras tostadas deshidratadas con chile son el resultado de una combinación perfecta entre tradición y creatividad, pensadas para ofrecer un toque de sabor y color sin caer en el exceso de picante.</p>
+            <p>Cada pieza está cuidadosamente elaborada con ingredientes seleccionados, donde los pedacitos y semillas naturales de chile no solo aportan un sabor especial, sino que decoran la tostada con matices únicos, haciendo que cada una luzca tan bien como sabe. En <b>Tochi</b> entendemos que el chile no solo es picor, sino carácter, aroma y cultura, por eso trabajamos para que ese toque característico esté presente de forma equilibrada, respetando los paladares que disfrutan del chile, pero sin exagerar.</p>
+            <p>Nuestro proceso de deshidratado mantiene la textura crujiente que todos amamos, sin necesidad de freír, logrando un snack saludable, ligero y versátil, perfecto para acompañar tus comidas favoritas, para disfrutar como botana o incluso para servir en reuniones con algo distinto y especial.</p>
+        </section>
+    
+        <section class="eslogan">
+            <div class="imagenes-hoover">
+                <div class="imagen-texto">
+                    <img src="./IMAGENES/index/eslogan1.png" alt="Eslogan 1">
+                    <div class="texto">Crujiente como tus ganas de probar algo diferente. Cada mordida está pensada para sorprender tu paladar con un sabor natural, equilibrado y lleno de carácter. Tochi no solo pica: enamora.</div>
+                </div>
+                <div class="imagen-texto">
+                    <img src="./IMAGENES/index/eslogan2.png" alt="Eslogan 2">
+                    <div class="texto">Nuestras tostadas nacen del trabajo hecho a mano, con ingredientes cuidadosamente seleccionados y una receta que honra lo mejor de nuestras raíces.</div>
+                </div>
+                <div class="imagen-texto">
+                    <img src="./IMAGENES/index/eslogan3.png" alt="Eslogan 3">
+                    <div class="texto">Creemos que lo bueno no tiene que ser caro. Por eso Tochi es una delicia que puedes disfrutar todos los días, sin afectar tu bolsillo.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-contenido">
+            <h2>¿Dónde nos encontramos?</h2>
+            <div id="mapa-placeholder">
+                <p><b>Tochi</b> tiene su sede en Teocaltiche, Jalisco, un lugar conocido por su rica tradición agrícola y gastronómica. Desde aquí, trabajamos con el objetivo de llevar nuestro producto a todo México y, en un futuro cercano, al mercado internacional.</p>
+                <div class="contenedor-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d16199.566622716151!2d-102.5734398474713!3d21.43837941770397!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1744513552701!5m2!1ses!2smx" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> Tel: +52 123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> Email: contacto@tochi.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Tochi #123, Teocaltiche, JAL</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><i class="fas fa-home"></i> <a href="index.html">Inicio</a></li>
+                    <li><i class="fas fa-users"></i> <a href="./HTML/nosotros.html">Nosotros</a></li>
+                    <li><i class="fas fa-box-open"></i> <a href="./HTML/productos.html">Productos</a></li>
+                    <li><i class="far fa-address-book"></i> <a href="./HTML/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Tochi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+        <!-- JAVASCRIPT-->
+        <script src="./JAVASCRIPT/carrusel.js"></script>
+        <script src="./JAVASCRIPT/menu.js"></script>
+        <script src="./JAVASCRIPT/imagenes.js"></script>
+        <script src="./JAVASCRIPT/header.js"></script>
+</body>
+</html>

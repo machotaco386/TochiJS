@@ -1,0 +1,138 @@
+.seccion-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.formulario-contacto,
+.tarjeta-contacto {
+    flex: 1 1 45%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(198, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.formulario-contacto h2,
+.tarjeta-contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d72638;
+    text-align: center;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #444;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.formulario-contacto select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23d72638" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 0.65rem auto;
+}
+
+.formulario-contacto button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background-color: #d72638;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #b71c26;
+}
+
+.checkbox-politica {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.95rem;
+    color: black;
+}
+
+
+.checkbox-politica input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #d72638;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.tarjeta-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tarjeta-contacto li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.tarjeta-contacto i {
+    color: #d72638;
+    font-size: 1.2rem;
+}
+
+textarea {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+}
+
+.formulario-contacto select:focus,
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #d72638;
+    border-width: 2px;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+    display: block;
+}
+

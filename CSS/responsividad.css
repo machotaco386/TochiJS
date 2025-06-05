@@ -1,0 +1,183 @@
+/* === MÓVILES (hasta 600px) === */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 1rem;
+        position: relative;
+        top: 0;
+        margin-top: 0;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo img {
+        height: 100px;
+        margin-bottom: 0.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+        display: none;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    .carousel, .banner {
+        height: 40vh;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+
+    .imagenes-hoover {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-texto {
+        width: 90%;
+        min-width: unset;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-contacto,
+    .footer-links {
+        flex: none;
+    }
+
+    .texto-slide p {
+        font-size: 2rem;
+        padding: 1rem;
+        max-width: 90%;
+    }
+}
+
+/* === TABLETS (601px a 900px) === */
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .logo img {
+        height: 70px;
+        margin-right: 0;
+    }
+
+    nav .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-right: 2em;
+    }
+
+    .menu li a {
+        font-size: 0.9em;
+    }
+
+    .carousel, .banner {
+        height: 55vh;
+    }
+
+    .imagen-texto {
+        width: 75%;
+    }
+    
+    .imagenes-hoover{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    .footer-contenido {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .texto-slide p {
+        font-size: 2.5rem;
+        padding: 1rem;
+        max-width: 90%;
+    }
+}
+
+/* === ESCRITORIO PEQUEÑO (901px a 1200px) === */
+@media (min-width: 901px) and (max-width: 1200px) {
+    
+    
+    body {
+        padding-top: 15vh;
+    }
+
+    .carousel, .banner {
+        height: 65vh;
+    }
+
+    .imagen-texto {
+        width: 28%;
+    }
+
+    header nav .menu {
+        gap: 1.5rem;
+    }
+
+    .logo img {
+        height: 8vh;
+    }
+
+    header {
+        position: fixed;
+    }
+}
+
+/* === PANTALLAS GRANDES (más de 1200px) === */
+@media (min-width: 1201px) {
+
+    body {
+        padding-top: 15vh;
+    }
+    
+    .carousel, .banner {
+        height: 85vh;
+    }
+
+    .imagen-texto {
+        width: 30%;
+    }
+
+    .logo img {
+        height: 10vh;
+    }
+
+    header {
+        position: fixed;
+    }
+}

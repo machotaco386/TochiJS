@@ -1,0 +1,150 @@
+/* secciones */
+
+.seccion-contenido {
+    padding: 2rem;
+    text-align: center;
+}
+
+.seccion-contenido h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #d72638; 
+}
+
+/* Quienes somos e historia */
+
+.quienes-historia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
+
+}
+
+.quienes-historia .bloque {
+    flex: 1 1 48%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(198, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.quienes-historia h2 {
+    text-align: center;
+    color: #d72638;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.quienes-historia p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: #333;
+}
+
+.quienes-historia b {
+    color: #d72638;
+}
+
+
+
+/* Mision y vision */
+
+.mision-vision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.mision-vision h2 {
+    color: #d72638;
+}
+
+.caja {
+    background-color: #fff5f5;
+    border: 2px solid #d72638;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 500px;
+    flex: 1 1 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.2);
+    background-color: #ffeaea;
+}
+
+.caja i {
+    font-size: 3.5rem;
+    color: #d72638;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.caja h3 {
+    font-size: 2.2rem;
+    color: #d72638;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.caja p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+}
+
+
+
+/* Valores */
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.valor-item {
+    background-color: #fff1f1;
+    border: 2px solid #d72638;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.valor-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.2);
+    background-color: #ffeaea;
+}
+
+.valor-item i {
+    font-size: 2.5rem;
+    color: #d72638;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.valor-item b {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #d72638;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tochi: tostadas crujientes, picositas y llenas de sabor. Conócenos.">
+    <title>Tochi | Tochi saludable</title>
+    <link rel="icon" href="../../IMAGENES/index/TOCHI_LOGO.PNG" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../CSS/body.css">
+    <link rel="stylesheet" href="../../CSS/carrusel.css">
+    <link rel="stylesheet" href="../../CSS/imagenes.css">
+    <link rel="stylesheet" href="../../CSS/contenido.css">
+    <link rel="stylesheet" href="../../CSS/header.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <link rel="stylesheet" href="../../CSS/mapa.css">
+    <link rel="stylesheet" href="../../CSS/responsividad.css">
+    <link rel="stylesheet" href="../../CSS/menu.css">
+    <link rel="stylesheet" href="../../CSS/infoproductos.css">
+
+       <!-- AJAX -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+       <!-- shoelace -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+
+</head>
+
+<body>
+    
+      <!-- Botón Hamburguesa -->
+<button class="boton-menu" onclick="menu()">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <!-- Menú Lateral -->
+  <nav id="menu-lateral" class="menu-lateral">
+    <div class="encabezado-menu">
+      <h2><i class="fas fa-chili-pepper"></i> Tochi</h2>
+    </div>
+    <div class="elementos-menu">
+        <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="../nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+        <a href="../productos.html"><i class="fas fa-pepper-hot"></i> Productos</a>
+        <a href="../contacto.html"><i class="fas fa-envelope-open-text"></i> Contacto</a>
+      </div>
+  </nav>
+  
+  <!-- overlay -->
+  <div id="overlay" class="overlay" onclick="menu()"></div>
+  
+
+  <!-- Header -->
+    <header id="encabezado-principal">
+        <div class="logo">
+            <img src="../../IMAGENES/index/TOCHI_LOGO.PNG" alt="Logo de Tochi">
+            <h1>Tochi</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../nosotros.html">Nosotros</a></li>
+                <li><a href="../productos.html" class="activo">Productos</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--  Breadcrumb  -->
+
+    <div class="breadcrumb">
+        <sl-breadcrumb>
+            <sl-breadcrumb-item>
+              <sl-icon slot="prefix" name="house"></sl-icon>
+              <a href="../productos.html">Productos</a>
+            </sl-breadcrumb-item>
+            <sl-breadcrumb-item>Tochi saludable</sl-breadcrumb-item>
+          </sl-breadcrumb>
+    </div>
+
+    <!--  /Breadcrumb  -->
+
+    <!-- seccion principal -->
+
+    <section class="producto">
+        <div class="producto-container">
+          <div class="producto-carrusel">
+            <sl-carousel navigation pagination mouse-drag autoplay>
+              <sl-carousel-item>
+                <img src="../../IMAGENES/Productos/tochisaludable.png" alt="Tochi vista frontal" />
+              </sl-carousel-item>
+              <sl-carousel-item>
+                <img src="../../IMAGENES/Productos/Tochijuntas.png" alt="Tochi vista posterior" />
+              </sl-carousel-item>
+            </sl-carousel>
+          </div>
+          <div class="producto-detalles">
+            <h2>Tochi saludable</h2>
+            <p class="descripcion">
+                Para los amantes del picante, estas tostadas tienen un nivel de chile más intenso, ideal para quienes disfrutan de un sabor más fuerte y atrevido. Cada mordida ofrece una explosión de calor que despierta el paladar y resalta la personalidad vibrante de este snack.
+            </p>
+            <ul class="caracteristicas">
+              <li>100% natural</li>
+              <li>Sin conservadores</li>
+              <li>Hecho con amor</li>
+              <li>Bolsa resellable</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> Tel: +52 123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> Email: contacto@tochi.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Tochi #123, Teocaltiche, JAL</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><i class="fas fa-home"></i> <a href="../index.html">Inicio</a></li>
+                    <li><i class="fas fa-users"></i> <a href="../nosotros.html">Nosotros</a></li>
+                    <li><i class="fas fa-box-open"></i> <a href="../productos.html">Productos</a></li>
+                    <li><i class="far fa-address-book"></i> <a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Tochi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../JAVASCRIPT/header.js"></script>
+    <script src="../../JAVASCRIPT/menu.js"></script>
+
+    <!-- Shoelace -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+</body>
